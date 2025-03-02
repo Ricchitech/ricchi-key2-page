@@ -1,0 +1,334 @@
+#loadDiv {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+}
+
+#loadDivClear {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+}
+
+#loadMsg {
+  position: relative;
+  padding-top: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+#loadMsgClear {
+  position: relative;
+  padding-top: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.downArrowButton {
+  background: url("/wps/PA_SearchChallan2/img/down_arrow.jpg") !important;
+  width: 17px !important;
+  height: 10px;
+  float: right;
+  position: relative;
+}
+
+.upArrowButton {
+  background: url("/wps/PA_SearchChallan2/img/up_arrow.jpg") !important;
+  position: relative;
+  float: right;
+  width: 17px !important;
+  height: 10px;
+  margin: 4px 0px 0px 0px;
+}
+
+.heading {
+  background: #145ba6 !important;
+  height: 20px;
+  font-size: 13px !important;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  border-bottom: 0px solid #29435a;
+  border-top: 1px solid #29435a;
+  border-left: 1px solid #5b7993;
+  text-align: left;
+  white-space: nowrap;
+  padding: 10px 5px 10px 5px !important;
+  font: 13px Arial, Helvetica, sans-serif;
+  border-right: 1px solid #fff;
+}
+
+.sortHeading {
+  width: 99%;
+}
+
+.footerClass .text {
+  padding: 0px 10px;
+}
+
+#Sub_Headers {
+  background-color: #72c1e8;
+  color: #000;
+  height: auto !important;
+  cursor: pointer;
+  padding: 8px 10px 22px 10px;
+  margin: 0px;
+}
+
+#Sub_Headers .Sub_Header_Heading {
+  font-weight: bold;
+  position: relative;
+  color: #000;
+  width: 90%;
+  float: left;
+  font: 14px Arial, Helvetica, sans-serif;
+}
+
+#Sub_Headers .minus_icon {
+  width: 10%;
+  float: right;
+  position: relative;
+  text-align: right;
+  color: #fff;
+  top: -2px;
+}
+
+.Grey_Headers {
+  background-color: #ebebeb;
+  font-size: 16px;
+  height: auto !important;
+  padding: 10px 7px 7px 10px;
+  text-align: center;
+  font: 14px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.searchChallanDiv {
+  box-shadow: inset 18px 31px 207px rgba(35, 39, 35, 0.05) !important;
+  border: 1px solid rgb(236, 240, 243) !important;
+  margin: 25px 0px;
+  margin-top: 20px;
+}
+
+.Drop_down {
+  width: 200px;
+  height: 24px !important;
+  color: #585858;
+  font: 13px Arial, Helvetica, sans-serif;
+  border: 1px solid #9c9c9c !important;
+}
+
+.Field_Text {
+  font: 13px Arial, Helvetica, sans-serif;
+  color: #000;
+  width: 25%;
+  text-align: right;
+}
+
+.tdStyle {
+  width: 200px;
+  padding: 8px 5px;
+}
+
+.Half_field_text {
+  font-size: 14px;
+  color: #000;
+  padding-right: 5px;
+  width: 50%;
+  text-align: right;
+}
+
+.Input_Box {
+  width: 200px;
+  border: 1px solid #9c9c9c !important;
+  padding: 0 2px;
+  height: 24px !important;
+  color: #585858;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+
+.Calender_Input_Box {
+  border: 1px solid #9c9c9c !important;
+  width: 200px;
+  padding: 0 2px;
+  height: 24px !important;
+  color: #585858;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+
+.wpthemeLayoutContainers {
+  padding: 0px;
+}
+
+img.ui-datepicker-trigger {
+  position: relative;
+  right: 24px;
+  height: 19px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: 5px;
+  background-color: #145ba6;
+}
+
+div#ui-datepicker-div {
+  font: 13px Arial, Helvetica, sans-serif !important;
+  padding: 0px;
+  border: 1px solid #9c9c9c !important;
+}
+
+.ui-datepicker-calendar .ui-state-default,
+.ui-datepicker-calendar .ui-widget-content .ui- state-default {
+  background: #fff !important;
+}
+
+.ui-datepicker-calendar .ui-state-highlight,
+.ui-datepicker-calendar .ui-widget-content .ui- state-highlight,
+.ui-datepicker-calendar .ui-widget-header .ui-state-highlight {
+  background: #145ba6 !important;
+  color: #fff !important;
+  width: 18px;
+  height: 18px;
+  float: right;
+}
+
+.ui-datepicker-calendar .ui-state-default,
+.ui-datepicker-calendar .ui-widget-content .ui-state-default,
+.ui-datepicker-calendar .ui-widget-header .ui-state-default {
+  border: 1px solid #fff !important;
+}
+
+.dataTableEx {
+  empty-cells: show;
+  margin: 20px 10px;
+}
+
+input.searchBtn {
+  margin: 0px 5px;
+  font: 13px Arial, Helvetica, sans-serif;
+  /* background: #145BA6 !important; */
+  background-color: rgb(19, 89, 153) !important;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: none !important;
+  border: 0px !important;
+  padding: 9px 11px;
+}
+
+.row1Class1 {
+  background-color: #fff;
+  height: 24px;
+}
+
+.row1Class2 {
+  background-color: #ebebeb;
+  height: 24px;
+}
+
+td.footerClass {
+  background-color: #145ba6;
+  padding: 2px !important;
+  color: #fff;
+  text-align: center;
+}
+
+#se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/wps/PA_SearchChallan2/img/Preloader_8.gif") center no-repeat;
+}
+
+#se-pre-conClear {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/wps/PA_SearchChallan2/img/Preloader_8.gif") center no-repeat;
+}
+
+.text {
+  position: relative;
+  top: -8px !important;
+}
+
+.next {
+  border: 1px solid #c1c1c1;
+  position: relative;
+  padding: 3px;
+  top: 4px;
+  margin: 5px;
+  height: 20px;
+  background-color: #fff;
+  width: 20px;
+  background-size: 17px;
+  border-radius: 5px;
+}
+
+.first {
+  border: 1px solid #c1c1c1;
+  position: relative;
+  top: 4px;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.red_star {
+  color: #900;
+  padding-left: 5px;
+}
+
+.ui-datepicker-prev {
+  background: #fff url("/wps/PA_SearchChallan2/img/prev.png") no-repeat 3px !important;
+  position: absolute !important;
+  top: 1px;
+  left: 1px;
+  border: 1px solid #fff !important;
+  margin: 1px !important;
+}
+
+.ui-datepicker-prev-hover {
+  background: #fff url("/wps/PA_SearchChallan2/img/prev.png") no-repeat 3px !important;
+  position: absolute !important;
+  top: 1px;
+  left: 1px;
+  border: 1px solid #fff !important;
+  margin: 2px !important;
+}
+
+.ui-datepicker-next {
+  background: #fff url("/wps/PA_SearchChallan2/img/next.png") no-repeat 3px !important;
+  position: absolute !important;
+  top: 1px;
+  right: 1px;
+  border: 1px solid #fff !important;
+  margin: 1px !important;
+}
+
+.ui-datepicker-next-hover {
+  background: #fff url("/wps/PA_SearchChallan2/img/next.png") no-repeat 3px !important;
+  position: absolute !important;
+  top: 1px;
+  right: 1px;
+  border: 1px solid #fff !important;
+  margin: 2px !important;
+}

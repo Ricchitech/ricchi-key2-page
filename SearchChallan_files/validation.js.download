@@ -1,0 +1,515 @@
+/* This function is for checking the field should have alphabets only .*/ 
+function checkForAlphabets(textField,title){
+	//alert("Alpha only "+textField.value+" title: "+title+" ");
+
+	 var matches = /^[a-zA-Z]+$/;
+	 
+		if(!(textField.value.match(matches)))
+		{
+		alert(title+" should be alphabets only");
+		
+		textField.focus();
+		return false;
+		
+		}
+		else 
+			return true;
+}
+
+/* This function is for checking the field should have numbers only on keypress .*/
+function numeric(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+			if (k >= 48 && k <= 57) {
+				//alert("in if numeric");
+				return (k >= 48 && k <= 57);
+			}
+
+			else {
+				alert("Enter numbers only");
+				return false;
+			}
+		}
+
+/* This function is for checking the field should have alphabets only on keypress .*/
+function alpha(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+
+			if ((k > 64 && k < 91) || (k > 96 && k < 123)) {
+				return ((k > 64 && k < 91) || (k > 96 && k < 123));
+			}
+
+			else {
+				alert("Enter Alphabets only");
+				return false;
+			}
+		}
+
+/* This function is for checking the field should have alphabets and space only on keypress .*/
+function alphaSpace(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+
+			if ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 32) {
+				return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 32);
+			}
+
+			else {
+				alert("Enter Alphabets only");
+				return false;
+			}
+		}
+
+function allnumeric(textField,title)  
+{  
+   var numbers = /^[0-9]+$/;  
+   if(!textField.value.match(numbers))  
+   {  
+   alert(title+ " should be numbers only");  
+   textField.focus();
+   return false;  
+   }  
+   return true;  
+   
+}   
+
+/* This function is for checking the field should have selected spl char */
+function checkForSplChar(textField,title){
+	//alert("Alpha only "+textField.value+" title: "+title+" ");
+	//alert("hi");
+//var textField = document.getElementById("abc");
+	// var matches = /^[a-zA-Z]+$/;
+	 var matches = /^[ A-Za-z0-9.\/\\#\-:;()|]+$/;
+		if(!(textField.value.match(matches)))
+		{
+		alert("Invalid special character. Only # : ; .  / \ ( ) - | characters are allowed");
+		
+		textField.focus();
+		return false;
+		
+		}
+		else 
+			return true;
+}
+/* This function is for checking the field should have alphabets and numbers only and no special characters on keypress .*/
+
+function alphaNumeric(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+
+			if ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32
+					|| (k >= 48 && k <= 57)) {
+				return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8
+						|| k == 32 || (k >= 48 && k <= 57));
+			}
+
+			else {
+				alert("Special characters not allowed");
+				return false;
+			}
+		}
+
+/* This function is for checking the field should have address validation on keypress .*/
+
+		function addressValid(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+
+			if ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32
+					|| (k >= 48 && k <= 57) || k == 35 || k== 38 || k == 39 || k == 44 || k == 46
+					|| k == 47 || k == 127) {
+				return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8
+						|| k == 32 || (k >= 48 && k <= 57) || k == 35|| k== 38 || k == 39
+						|| k == 44 || k == 46 || k == 47 || k == 127);
+			}
+
+			else {
+				alert("Special charaters not allowed. Only # , . / ' & are allowed");
+
+				return false;
+			}
+		}
+
+
+/* This function is for checking the field should have alphabets and spl char only on keypress .*/
+function alphaNumericSplChar(e) {
+			var k;
+			document.all ? k = e.keyCode : k = e.which;
+
+			if ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32
+					|| (k >= 48 && k <= 57) || k == 45 || k== 35||k==40||k==41||k==46||k==47||k==58||k==59||k==92||k==124) {
+				return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8
+						|| k == 32 || (k >= 48 && k <= 57) || k == 45|| k== 35||k==40||k==41||k==46||k==47||k==58||k==59||k==92||k==124);
+			}
+
+			else {
+				alert("Invalid special character. Only # : ; . \ / ( ) - | characters are allowed");
+				return false;
+			}
+		}
+
+
+/* This function is for checking the field should have numbers only .*/ 
+function checkForNumbers(textField,title){
+//alert("num only "+textField.value+" title: "+title+" ");
+var matchesAlpha = /^[a-zA-Z]+$/;
+	if(!textField.value.match(matchesAlpha))
+	{
+	alert(title+" takes Numbers only");
+	textField.focus();
+	return false;
+	
+	}
+		else 
+			return true;
+}
+
+
+function isNumberKey(evt)
+    {
+         var charCode = (evt.which) ? evt.which : event.keyCode;
+         if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+    }
+
+
+
+/* This function is for checking Address fiels .*/
+function addrValidate(textField,title){
+	alert("Addresss");
+	alert("address "+textField.value+" title: "+title+" ");
+	
+var addr= /[^a-zA-Z0-9\-\/\#\,\.\ ]+$/;
+    if( addr.test(textField.value) ) {
+        alert(title+" contains invalid special charater. Only # , . / - are allowed");
+        return false;
+    }
+
+    return true;     
+	}
+
+/* This function is for checking the null values in the phn number Value and validate .*/ 
+function checkPhnNo(textField,title){
+	//alert("phnum validation "+textField.value+" title: "+title+" ");
+
+	var matchesNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+	
+	if(!(textField.value.match(matchesNum)) && textField.value != "")
+	{
+	alert("Enter valid "+title);
+	textField.focus();
+	return false;
+	
+	} 
+	else 
+		return true;
+	
+}
+/* This function is for checking the null values in the Text field Value .*/ 
+function checkForNullValues(textField,title) { 
+	//alert("not null "+textField.value+" title: "+title);
+    if(textField.value == "") { 
+        alert("Please Enter "+title);
+        textField.focus();
+    
+        return false; 
+   }
+    if(textField.value == 0 || textField.value == "0") { 
+        alert("Amount should not be 0. Please Enter Amount.");
+        textField.focus();
+    
+        return false; 
+   }
+     space = 0; 
+     for(var i=0;i<textField.value.length;i++){ 
+        if(textField.value.charAt(i)==' ') { 
+            space++; 
+         }   
+     }  
+     if(space>=(textField.value.length-space)){ 
+        alert(title+" should not have space in starting position");
+        textField.focus();
+     
+        return false; 
+     }
+    
+     return true; 
+  }//:End Of function for checkNullValues.
+
+
+function checkForNullValues1(textField,title) { 
+	//alert("not null "+textField.value+" title: "+title.value);
+    if(textField.value == "") { 
+        alert("Please Enter "+title.value);
+        textField.focus();
+    
+        return false; 
+   }
+    if(textField.value == 0 || textField.value == "0") { 
+        alert(title.value+" should not be 0. Please Enter "+title.value);
+        textField.focus();
+    
+        return false; 
+   }
+     space = 0; 
+     for(var i=0;i<textField.value.length;i++){ 
+        if(textField.value.charAt(i)==' ') { 
+            space++; 
+         }   
+     }  
+     if(space>=(textField.value.length-space)){ 
+        alert(title.value+" should not have space in starting position");
+        textField.focus();
+     
+        return false; 
+     }
+    
+     return true; 
+  }//:End Of function for checkNullValues.
+
+
+
+/* This function is for Validating the Email Id Text field Value */ 
+function checkEmailAddress(fieldObj){ 
+	//alert("email only "+fieldObj.value);
+   emailExp = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/; 
+   fieldValue = fieldObj.value; 
+   if (!(fieldValue.match(emailExp)) && fieldValue != ""){ 
+	  
+       alert("Invalid Email Id. Please Enter like 'abc@xyz.com' ");
+       fieldObj.focus();
+      return false; 
+   } //end of if~ 
+   return true; 
+} 
+
+/* This function is used for select option */ 
+function fnValidateSelectOption(fieldObj,title){ 
+	
+	//alert("select: "+fieldObj.value+" title: "+title);
+ if(fieldObj.value == 0){ 
+  alert("Select "+title); 
+
+  fieldObj.focus(); 
+  return false; 
+ }//end of if~ 
+return true; 
+}//end of function
+
+/* This function is used to check total amount*/ 
+function fnValidateTamt(tamt,mop,gtwyorbank,gtwyChrg,grossAmt){
+//alert("validation js");
+	//alert("tamt: "+tamt.value+" gtwy: "+gtwyorbank.value+" charge: "+gtwyChrg.value+" mop: "+mop.value+" grossamt: "+grossAmt.value);
+	
+	if(!(tamt.value == 0 || tamt.value == "0" || tamt.value == "")) { 	       
+	       if(mop.value == '10700050' && !(gtwyorbank.value == 0 || gtwyorbank.value == "0" || gtwyorbank.value == "")){	       
+	       grossAmt.value = Number(tamt.value) + Number(gtwyChrg.value);	       
+	       }	       
+	       
+	   }	
+}
+
+
+/* This function is used to check same purpose specific id not added again and purpose record which is opened for update cannot be deleted*/ 
+function fnValidateFlags(status,alreadyExists,tinFlg,depoAccFlag,sspPymtTypFlg){
+	//alert("Status: "+status.value+" alrdyexists: "+alreadyExists);
+	
+	if(status.value==1)
+	{
+	alert("This file cannot be deleted as it is opened for updation.");
+	
+	return false;
+	}
+	
+	if(alreadyExists.value==1)
+	{
+	alert("Entered Purpose Specific ID/ Sub Purpose/ Purpose is already present. Enter different id/Purpose");
+	
+	//document.getElementById("view"+namespace+":challanForm:alreadyExists").value="0";
+	
+	return false;
+	}
+	if(tinFlg.value=="false")
+	{
+	alert("Invalid TIN");
+	
+	return false;
+	}
+	
+	if(depoAccFlag.value==1)
+	{
+	alert("Select same Deposit Account No as previously added purpose");
+	
+	return false;
+	}
+	
+	if(sspPymtTypFlg.value==1)
+	{
+	alert("Select same Type of Payment as previously added purpose");
+	
+	return false;
+	}
+	else return true;	
+}
+
+
+/* This function is used for pan card validation*/ 
+function fnValidatePan(tamt,pancard,validity){
+	//alert("pancard: "+pancard.value+" tamt: "+tamt.value+" validity: "+validity.value);
+	
+	if (Number(tamt.value) == Number(validity.value) || Number(tamt.value) > Number(validity.value)) {
+		if (checkForNullValues(pancard, "PAN Card no.") == false) {
+			//alert("returning false");
+			return false;
+		}
+
+		if (pancard.value.length < 10) {
+			alert("Please enter valid PAN Card no.");
+			pancard.focus();
+			return false;
+		}
+
+		if (pancard.value != "") {
+			ObjVal = pancard.value;
+			var panPat = /^([a-zA-Z]{5})(\d{4})([a-zA-Z]{1})$/;
+			var code = /([C,P,H,F,A,T,B,L,J,G,c,p,h,f,a,t,b,l,j,g])/;
+			var code_chk = ObjVal.substring(3, 4);
+			if (ObjVal.search(panPat) == -1) {
+				alert("Enter valid PAN Card No.");
+				pancard.focus();
+				return false;
+			}
+			if (code.test(code_chk) == false) {
+				alert("Enter valid PAN Card No.");
+				pancard.focus();
+				return false;
+			}
+
+		}
+	}	
+}
+
+/* This function is to validate atleast one purpose is added before submitting challan form */ 
+
+function fnValidateShowTable(govTbl,depTbl){
+	if(govTbl.value == "false" && depTbl.value == "false"){
+		alert("Kindly add purpose for which challan needs to be generated.");
+		return false;
+		}
+	return true;
+}
+
+//validations for captcha
+function doValidCaptcha(){
+	var url1 = "/CapchaValidationServlet";
+	alert('doValidCaptcha');
+	try {
+		new Ajax.Request(url1, {
+			method : 'post',
+			parameters : formObj,
+			contentType : 'application/x-www-form-urlencoded',
+			asynchronous : false,
+			onSuccess : function(data) {
+				alert('success from doValidCaptcha'+data.result);
+				var jsonObj = JSON.parse(data.result);
+										
+			},
+			onFailure : function() {
+				alert(failAlert);
+				hideProgressbar();
+			}
+		});
+	} catch (e) {
+		alert(e.message);
+	}
+}
+
+
+function fn_loginKeyPress(){
+	if(document.getElementById('txt_Captcha') !=  null && document.getElementById('txt_Captcha') != undefined){
+		document.getElementById('txt_Captcha').value = "";
+		jQuery('#messageDiv').css("display","none");
+	}
+}
+
+
+function checkCaptcha_Vanila() {
+    var xmlhttp = new XMLHttpRequest();
+    var code = document.getElementById('txt_Captcha').value;
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+               if(xmlhttp.responseText =='valid'){
+            	   jQuery('#messageDiv').html("<font color='green'>Captcha is valid. </font>");
+       	    		jQuery('#messageDiv').css("display","block");
+       	    	    return xmlhttp.responseText;
+               }
+               else if(xmlhttp.responseText == 'invalid'){
+	       	    	jQuery('#messageDiv').html("<font color='red'>Captcha is invalid </font>");
+	       	    	jQuery('#messageDiv').css("display","block");
+	       	    	return xmlhttp.responseText;
+       	    }
+           }
+           else if (xmlhttp.status == 400) {
+              alert('There was an error 400');
+              return false;
+           }
+           else {
+               alert('something else other than 200 was returned');
+               return false;
+           }
+        }
+    };
+
+    xmlhttp.open("GET", "/wps/PA_ChallanJSF2/CapchaValidationServlet?txt_Captcha="+code, true);
+    xmlhttp.send();
+}
+
+
+function checkCaptcha(){
+	var code = document.getElementById('txt_Captcha').value;
+	var res= false;
+	jQuery.ajax({
+        url : "/wps/PA_ChallanJSF2/CapchaValidationServlet",
+        type: 'POST',
+		async:false,
+        data : {
+        	txt_Captcha : code
+        },
+        success : function(results){
+        	//alert("confirm");
+            if(results != null && results != "")
+            {
+            	 if(results == 'valid'){
+            	    	jQuery('#messageDiv').html("<font color='green'>Captcha is valid. </font>");
+            	    	jQuery('#messageDiv').css("display","block");
+            	    	
+            	    	/*var x = document.getElementById("snackbar");
+            	    	x.value= "Captcha validated successfully.";
+            	    	x.className = "show";
+            	    	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);*/
+            	    	    
+            	    	res=true;
+            	    	
+            	    }else if(results == 'invalid'){
+            	    	jQuery('#messageDiv').html("<font color='red'>Captcha is invalid </font>");
+            	    	jQuery('#messageDiv').css("display","block");
+            	    	res=false;
+            	    	
+            	    }
+            }
+            else{
+            	jQuery('#messageDiv').css("display","none");
+            	jQuery('#messageDiv').html("");
+                //alert("Some exception occurred! Please try again.");
+                res=false;
+                
+            }
+        }
+       
+    });
+ return res;
+}

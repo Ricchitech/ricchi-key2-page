@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:hx="http://www.ibm.com/jsf/html_extended">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="./SearchChallan_files/mashup_ra_collection.css" type="text/css">
+	<link rel="stylesheet" href="./SearchChallan_files/search_style.css">
+	<link rel="stylesheet" href="./SearchChallan_files/khajane.css">
+	<script type="text/javascript" src="./script.js"></script>
+	<!-- <script type="text/javascript" src="SearchChallan_files/ra_collection_003"></script> -->
+	<script type="text/javascript">
+		var x = JSON.parse(localStorage.getItem("challan_data"));
+		window.onload = function () {
+			document.getElementById("challan_id").value = x.challan;
+		}
+	</script>
+	<title>SearchChallan</title>
+</head>
+
+<body class="toolbar-closed">
+	<div>
+		<table border="0" align="center" cellpadding="0" cellspacing="0" id="Main_Container">
+			<tbody>
+				<tr>
+					<td align="center" valign="top">
+						<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+
+									<td height="27" align="left" valign="top" class="top_bar">
+
+										<div class="khajane-top-bar">
+											<div class="khajane-top-bar-left right_nav_brd">
+												<a href="#">Home<span class="khajane-top-bar-left-images"></span></a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="wpthemeInner">
+		<div class="wpthemeMainContent" role="main">
+			<div style="display:none" id="portletState">{}</div>
+			<div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden">
+				<div>
+					<div class="wpthemeInner">
+						<div class="hiddenWidgetsDiv">
+							<div class="component-container ibmDndRow wpthemeRow hiddenWidgetsContainer wpthemeCol12of12 wpthemeFull id-Z7_48CC1OC0O8DL90QOOVULJH10J4"
+								name="ibmHiddenWidgets"></div>
+							<div style="clear:both"></div>
+						</div>
+						<!-- this layout has one main container -->
+						<div class="wptheme1Col">
+							<div class="component-container wpthemeLeft wpthemeCol ibmDndColumn wpthemeCol12of12 wpthemeFull wpthemePrimary id-Z7_48CC1OC0O8DL90QOOVULJH10J2"
+								name="ibmMainContainer">
+								<div class="component-control id-Z7_I2K611S0OGNNC0QA0KEELJ20G3"><span
+										id="Z7_I2K611S0OGNNC0QA0KEELJ20G3"></span>
+									<section class="ibmPortalControl wpthemeControl wpthemeHidden a11yRegionTarget"
+										role="region" aria-labelledby="wpRegionIdZ7_I2K611S0OGNNC0QA0KEELJ20G3">
+
+										<!-- start header markup -->
+										<div class="wpthemeControlBody wpthemeOverflowAuto wpthemeClear">
+											<form>
+												<div class="Grey_Headers">ಚಲನ್ ಅನ್ನು ಹುಡುಕು \ Search Challan
+												</div>
+												<div id="Sub_Headers">
+													<div class="Sub_Header_Heading">ಚಲನ್ ಅನ್ನು ಹುಡುಕು \ Search Challan
+													</div>
+												</div>
+												<div class="khajane-collapsable-panel">
+													<div id="searchChallanDiv">
+														<div class="Sub_Header_Heading">
+														</div>
+														<table
+															id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:neftRtgsDtlPanel"
+															cellpadding="2" width="100%" style="margin-left: 24%;">
+															<tbody>
+																<tr>
+																	<td class="Field_Text"><span
+																			id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:challanNoId"
+																			class="Field_Text">ಚಲನ್ ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ <br>
+																			Challan Reference No.</span></td>
+																	<td class="tdStyle"><input type="text"
+																			maxlength="18" class="Input_Box"
+																			id="challan_id">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="Field_Text">
+
+
+																	</td>
+																	<td class="tdStyle"></td>
+																</tr>
+															</tbody>
+														</table>
+														<div align="center"><span style="font-size: 30">OR</span>
+														</div>
+														<table cellpadding="2" width="100%" style="margin-left: 24%;">
+															<tbody>
+																<tr>
+																	<td class="Field_Text"><span
+																			class="Field_Text">ಬ್ಯಾಂಕ್ ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ
+																			<br> Bank Reference Number</span></td>
+																	<td class="tdStyle"><input
+																			id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:bankRefNo"
+																			name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:bankRefNo"
+																			maxlength="25" class="Input_Box">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<div align="center"><span style="font-size: 12">Type the Captcha
+																shown</span><img
+																src="https://k2.karnataka.gov.in/wps/PA_SearchChallan2/CustomSimpleCaptchaServlet"
+																style="text-align:center; margin-left: 2rem;"><img
+																id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:reload"
+																src="SearchChallan_files/reload_image4.png"
+																style="text-align:center;">
+															<div id="messageDiv" style="display:none;"></div>
+															<div id="snackbar"></div>
+															<div>
+																<input type="text" name="txt_Captcha"
+																	style="width: 200px;margin-left: 177px;border: 1px solid #9C9C9C !important;padding: 0 2px;height: 24px !important;color: #585858;font: 13px Arial, Helvetica, sans-serif;"
+																	id="txt_Captcha" autocomplete="off">
+
+																<input name="hiddenCaptcha" id="hiddenCaptcha"
+																	type="hidden" readonly="readonly" value="">
+																<input name="hiddenPCaptcha" id="hiddenPCaptcha"
+																	type="hidden" readonly="readonly"
+																	value="valid.mRDTTIrMGOeG2l/9ZS2fWg==">
+															</div>
+
+														</div>
+
+														<table align="center"
+															style="margin-top: 20px; margin-bottom: 20px;">
+															<tbody>
+																<tr>
+																	<td><span><input type="submit"
+																				value="ಹುಡುಕು \ Search"
+																				class="searchBtn"></span> <span><input
+																				type="submit" value="ಮರುಜೋಡಿಸು \ Reset"
+																				class="searchBtn"></span> <span><input
+																				type="submit" value="ಹಿಂದೆ \ Back"
+																				class="searchBtn"></span></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<table id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1"
+													border="1" cellpadding="7" cellspacing="0" width="100%"
+													style="border: 1px solid #D8D8D8;" class="table">
+													<thead>
+														<tr>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					class="outputText sortTable">ಚಲನ್
+																					ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ <br> Challan Reference
+																					No.</span></td>
+																			<td><a href="#" class="upArrowButton"></a>
+																			</td>
+																			<td><a href="#" class="downArrowButton"></a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					class="outputText sortTable">ಪಾವತಿ
+																					ಹಂತ <br> Payment Status</span></td>
+																			<td><a href="#" class="upArrowButton"></a>
+																			</td>
+																			<td><a href="#" class="downArrowButton"></a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					class="outputText sortTable">ಬ್ಯಾಂಕ್
+																					ಹೆಸರು <br> Bank Name</span></td>
+																			<td><a href="#" class="upArrowButton"></a>
+																			</td>
+																			<td><a href="#" class="downArrowButton"></a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:text2"
+																					class="outputText sortTable">ಚಲನ್
+																					ಸಂಖ್ಯೆ <br> Challan Number</span>
+																			</td>
+																			<td><a href="#" class="upArrowButton"></a>
+																			</td>
+																			<td><a href="#" class="downArrowButton"></a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:text3"
+																					class="outputText sortTable">ಸಂದಾಯದಾರನ
+																					ಹೆಸರು <br> Name of the
+																					Remitter</span></td>
+																			<td><a href="#"
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_3r"
+																					name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_3r"
+																					class="upArrowButton"></a></td>
+																			<td><a href="#"
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_3t"
+																					name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_3t"
+																					class="downArrowButton"></a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:text4"
+																					class="outputText">ಚಲನ್ ದಿನಾಂಕ <br>
+																					Challan Date</span></td>
+																			<td><a href="#"
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_40"
+																					name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_40"
+																					class="upArrowButton"></a></td>
+																			<td><a href="#"
+																					id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_42"
+																					name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_42"
+																					class="downArrowButton"></a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="heading" scope="col">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="sortHeading"><span
+																					class="outputText">ಮೊತ್ತ <br>
+																					Amount</span></td>
+																			<td><a href="#" class="upArrowButton"></a>
+																			</td>
+																			<td><a href="#" class="downArrowButton"></a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+														</tr>
+													</thead>
+													<tfoot>
+														<tr>
+															<td colspan="7" class="footerClass"><input
+																	id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4e"
+																	name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4e"
+																	type="image" src="SearchChallan_files/first.png"
+																	class="first" disabled="disabled"><input
+																	id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4f"
+																	name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4f"
+																	type="image" src="SearchChallan_files/prev.png"
+																	class="next" disabled="disabled"><span
+																	class="text">Page 1 of 1</span><input
+																	id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4h"
+																	name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4h"
+																	type="image" src="SearchChallan_files/next.png"
+																	class="next" disabled="disabled"><input
+																	id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4i"
+																	name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:searchForm:tableEx1:j_id_4i"
+																	type="image" src="SearchChallan_files/last.png"
+																	class="first" disabled="disabled"></td>
+														</tr>
+													</tfoot>
+													<tbody>
+														<tr class="row1Class1">
+															<td class="none"><a href="#" class="outputText">
+																	<script>
+																		document.write(x.challan);
+																	</script></span>
+																</a>
+															</td>
+															<td class="none">Success</td>
+															<td class="none">
+																<script>
+																	document.write(x.gateway);
+																</script>
+															</td>
+															<td class="right">--NA--</td>
+															<td class="">
+																<script>
+																	document.write(x.firstname);
+																</script>
+															</td>
+															<td class="">
+																<script type="text/javascript">
+
+																	currentDate();
+
+																</script>
+															</td>
+															<td class="">
+																<script>
+																	document.write(x.amount);
+																</script>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
+
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--end main content-->
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

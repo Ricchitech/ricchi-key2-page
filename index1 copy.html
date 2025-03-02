@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 Challan Generater</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+        integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./SearchChallan_files/style.css">
+    <script type="text/javascript" src="./SearchChallan_files/script.js"></script>
+    <script type="text/javascript">
+        console.log(taluk_json.districts)
+    </script>
+</head>
+
+<body>
+
+    <div class="formbold-main-wrapper">
+
+        <div class="formbold-form-wrapper">
+
+            <img class="formbold-img" src="./SearchChallan_files/logo.jpg">
+
+            <form class="registration_form" id="registration_form">
+                <div class="formbold-form-title" style="text-align: center;">
+                    <h4 class="">Khajane 2 Challan Portal</h4>
+
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="firstname" class="formbold-form-label">
+                            Name
+                        </label>
+                        <input type="text" value="BHARATHRAJ" required name="firstname" id="firstname"
+                            class="formbold-form-input" />
+                    </div>
+                    <div>
+                        <label for="phone" class="formbold-form-label"> Phone number </label>
+                        <input type="number" value="9110839147" required name="phone" id="phone"
+                            class="formbold-form-input" />
+                    </div>
+                    <div>
+                        <label for="email" class="formbold-form-label"> Email </label>
+                        <input type="email" value="brg2289@gmail.com" name="email" id="email"
+                            class="formbold-form-input" />
+                    </div>
+                </div>
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="challan" class="formbold-form-label">
+                            Challan Reference Number
+                        </label>
+                        <!-- <input type="text" required name="challan" maxlength="19" id="challan"
+                            class="formbold-form-input" value="CR01250030000330821" /> -->
+                        <input type="text" required readonly name="challan" onclick="generateChallanrefnumber()"
+                            maxlength="19" id="challan" class="formbold-form-input" />
+                    </div>
+                    <div>
+                        <label for="gateway" class="formbold-form-label"> Payment Gateway </label>
+                        <select name="gateway" id="gateway" class="formbold-form-input">
+                            <option value="SBI e Pay" class="formbold-form-input">SBI e Pay</option>
+                            <option value="ICICI e Pay" class="formbold-form-input">ICICI e Pay</option>
+                            <option value="Canara e Pay" class="formbold-form-input">Canara e Pay</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="formbold-input-flex">
+                    <div>
+                        <label for="years" class="formbold-form-label"> Number of Years </label>
+                        <input type="number" onblur="calculatestampdutyy(event)" value="10" required
+                            placeholder="No.s of Years" name="years" id="amount" class="formbold-form-input" />
+                    </div>
+
+
+                    <div>
+                        <label for="district" class="formbold-form-label"> District </label>
+                        <select name="district" id="district" class="formbold-form-input">
+
+                            <script>
+                                var elm = document.getElementById('district'),
+                                    df = document.createDocumentFragment();
+                                for (var i = 0; i < districts_json.districts.length; i++) {
+                                    var option = document.createElement('option'); // create the option element
+                                    option.value = districts_json.districts[i]; // set the value property
+                                    option.appendChild(document.createTextNode(districts_json.districts[i])); // set the textContent in a safe way.
+                                    df.appendChild(option); // append the option to the document fragment
+                                }
+                                elm.appendChild(df); 
+                            </script>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sro" class="formbold-form-label"> SRO </label>
+                        <select name="sro" id="sro" class="formbold-form-input">
+                            <option value="DEVANAHALLI" class="formbold-form-input">DEVANAHALLI</option>
+                            <option value="HOSAKOTE" class="formbold-form-input">HOSAKOTE</option>
+                            <option value="DODDABALLAPUR" class="formbold-form-input">DODDABALLAPUR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formbold-mb-3">
+                    <label for="address" class="formbold-form-label">
+                        Address
+                    </label>
+                    <input type="text" required value="devanahalli" name="address" id="address"
+                        class="formbold-form-input" />
+                </div>
+
+
+                <div class="formbold-input-flex"
+                    style="gap: 10px; justify-content: space-between; align-items: center;">
+                    <div style="width: max-content !important;">
+                        <label for="amount" class="formbold-form-label">
+                            Amount
+                        </label>
+                        <input type="text" required readonly name="amount" id="amount"
+                            class="formbold-form-input amountrs" />
+                    </div>
+                    <div>
+                        <label for="amount_words" class="formbold-form-label"> Amount in Words </label>
+                        <input type="text" readonly required name="amount_words" id="amount_words"
+                            class="formbold-form-input amount_words" s />
+                    </div>
+
+                </div>
+                <div class="formbold-input-flex-list">
+                    <div class="list">
+                        <input type="submit" class="btns" value="Generate Challan" />
+
+                    </div>
+
+                    <!-- <div class="list" id="challan_print" style="display: none;">
+                        <button class="btns">Print Challan</button>
+                        <button class="btns">Verify Challan</button>
+                    </div> -->
+                </div>
+            </form>
+            <div class="list" id="challan_print" style="display: none;">
+                <button class="btns">View</button>
+                <a href="./ViewChallan.html" target="_blank" class="btns">Print Challan</a>
+                <a href="" target="_blank" class="btns">Verify Challan</a>
+            </div>
+            <!-- <pre id="output"></pre> -->
+
+        </div>
+        <div class="viewitem" id="viewitem" style="display:none;">
+            <i class="fa fa-times-circle closeicon" onclick="closewindow(event)" aria-hidden="true"></i>
+            <div class="target"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

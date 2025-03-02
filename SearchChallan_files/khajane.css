@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	color: #333;
+	text-decoration: none; /*background-color:#ffffff;*/
+	font-size: 13px;
+}
+/****************************Middle Section*************************************/
+.Grey_Headers {
+	background-color: #ebebeb;
+	font-size: 16px;
+	height: auto !important;
+	padding: 10px 7px 7px 10px;
+	text-align: center;
+	font: 14px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#Sub_Headers {
+	background-color: #72c1e8;
+	color: #000;
+	height: auto !important;
+	cursor: pointer;
+	padding: 8px 10px 22px 10px !important;
+	margin: 0px;
+}
+
+#Sub_Headers .minus_icon {
+	float: right;
+	width: 30px;
+	border: #0F3 solid 0px;
+	padding-top: 8px;
+}
+
+#Sub_Headers .plus_icon {
+	float: right;
+	width: 30px;
+	border: #0F3 solid 0px;
+	padding-top: 3px;
+}
+
+#Sub_Headers .Sub_Header_Heading {
+	font-weight: bold;
+	position: relative;
+	color: #000;
+	width: 90%;
+	float: left;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+.searchIconButton {
+	top: 0px;
+	width: 15px;
+	height: 17px;
+	background-color: #fff;
+	left: -18px;
+	position: relative;
+}
+
+.khajane-collapsable-panel {
+	border: 1px solid #ebebeb;
+	margin-bottom: 10px;
+}
+
+.wpthemeLayoutContainers {
+	padding: 0px;
+}
+
+input.searchBtn {
+	margin: 0px 5px;
+	font: 13px Arial, Helvetica, sans-serif;
+	/* background: #145BA6 !important; */
+	background-color: rgb(19, 89, 153) !important;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none !important;
+	border: 0px !important;
+	padding: 9px 11px;
+}
+
+.ReadOnlyTrue {
+	width: 200px;
+	height: 24px;
+	padding: 0 2px;
+	color: #585858;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Calibri;
+	background-color: #ebebeb;
+	border: 1px solid #9C9C9C !important;
+}
+
+.AddressReadOnly {
+	width: 190px;
+	height: 50px;
+	padding: 0 2px;
+	border: 1px solid #647e8d;
+	color: #666;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Calibri;
+	background-color: #D8D8D8;
+}
+
+.Input_Box {
+	width: 200px;
+	border: 1px solid #9C9C9C !important;
+	padding: 0 2px;
+	height: 24px !important;
+	color: #585858;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.Calender_Input_Box {
+	border: 1px solid #9C9C9C !important;
+	width: 200px;
+	padding: 0 2px;
+	height: 24px !important;
+	color: #585858;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.Field_Text {
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #000;
+	width: 25%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.tdStyle {
+	width: 200px;
+	PADDING: 8px 5px;
+}
+
+.Half_field_text {
+	font-size: 14px;
+	color: #000;
+	padding-right: 5px;
+	width: 50%;
+}
+
+.red_star {
+	color: #900;
+	padding-left: 5px;
+}
+
+.Address {
+	width: 200px !important;
+	padding: 0 2px;
+	max-height: 150px;
+	color: #585858;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Calibri;
+	border: 1px solid #9C9C9C !important;
+}
+
+.heading {
+	background: #145BA6 !important;
+	font-size: 13px !important;
+	color: #fff;
+	height: 27px;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	padding: 3px 5px 3px 5px !important;
+	font: 13px Arial, Helvetica, sans-serif;
+	border-right: 1px solid #fff;
+}
+
+div#addDiv td {
+	padding: 5px;
+}
+
+div#addDiv {
+	padding: 0px 10px 10px 10px;
+}
+
+.footer {
+	background-color: RoyalBlue;
+	color: WindowText;
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	padding-left: 4pt;
+	padding-right: 4pt;
+	font-weight: 400;
+	overflow: -moz-scrollbars-none;
+}
+
+.Drop_down {
+	width: 200px;
+	height: 24px !important;
+	color: #585858;
+	font: 13px Arial, Helvetica, sans-serif;
+	border: 1px solid #9C9C9C !important;
+}
+
+.Drop_down_readOnly {
+	width: 200px;
+	padding: 0 0px;
+	border: 1px solid #647e8d;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Calibri;
+	color: #000;
+	background-color: #D8D8D8;
+}
+
+/****************************Middle Section*************************************/
+.searchBtn {
+	margin: 0px 5px;
+	font: 13px Arial, Helvetica, sans-serif;
+	/* background: #145BA6 !important; */
+	background-color: rgb(19, 89, 153) !important;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none !important;
+	border: 0px !important;
+	padding: 9px 11px;
+	float: left;
+}
+
+.okBtn {
+	margin: 0px 5px;
+	font: 13px Arial, Helvetica, sans-serif;
+	/* background: #145BA6 !important; */
+	background-color: rgb(19, 89, 153) !important;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none !important;
+	border: 0px !important;
+	padding: 9px 11px;
+}
+
+.ui-autocomplete {
+	text-align: left;
+	height: 200px;
+	width: 800px;
+	overflow-y: scroll;
+}
+
+/* Calendar CSS */
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: 5px;
+	background-color: #145BA6;
+}
+
+.ui-datepicker-calendar .ui-state-default,.ui-datepicker-calendar .ui-widget-content .ui- state-default
+	{
+	background: #fff !important;
+	border: 0px solid #fff !important;
+}
+
+.ui-datepicker-calendar .ui-state-highlight,.ui-datepicker-calendar .ui-widget-content .ui- state-highlight,.ui-datepicker-calendar .ui-widget-header .ui-state-highlight
+	{
+	background: #145BA6 !important;
+	color: #fff !important;
+	width: 18px;
+	height: 18px;
+	float: right;
+}
+
+div#ui-datepicker-div {
+	font: 13px Arial, Helvetica, sans-serif !important;
+	padding: 0px;
+	border: 1px solid #9C9C9C !important;
+}
+
+.ui-datepicker-trigger {
+	width: 16px;
+	left: -21px;
+	position: Relative;
+}
+
+.khajane-push-up-text-field {
+	position: relative;
+	top: -10px !important;
+}
+
+th.heading:last-child {
+	border-right: 0px solid #D8D8D8;
+}
+
+.ui-datepicker-prev {
+	background: #fff url('/wps/PA_SearchChallan2/img/prev.png') no-repeat
+		2px !important;
+	position: absolute !important;
+	top: 5px !important;
+	left: 5px !important;
+	width: 22px !important;
+	height: 22px !important;
+	border: 1px solid #fff !important;
+}
+
+.ui-datepicker-next {
+	background: #fff url('/wps/PA_SearchChallan2/img/next.png') no-repeat
+		4px !important;
+	position: absolute !important;
+	top: 5px !important;
+	right: 5px !important;
+	width: 22px !important;
+	height: 22px !important;
+	border: 1px solid #fff !important;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:hx="http://www.ibm.com/jsf/html_extended" data-qb-installed="true">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="./SearchChallan_files/mashup_ra_collection" type="text/css">
+	<script type="text/javascript" src="./SearchChallan_files/ra_collection"></script>
+	<script type="text/javascript" src="./script.js"></script>
+
+
+	</script>
+
+	<style id="layout-wstate-styles"></style>
+	<title>SearchChallan</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./SearchChallan_files/jquery-ui-smooth-themes.css">
+	<link rel="stylesheet" href="./SearchChallan_files/khajane.css">
+	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript">
+		var x = JSON.parse(localStorage.getItem("challan_data"));
+		// var y = JSON.stringify(json)
+		// console.log(y)
+	</script>
+</head>
+
+<body class="toolbar-closed" data-new-gr-c-s-check-loaded="14.1218.0" data-gr-ext-installed="">
+
+	<div class="wpthemeInner">
+		<div class="wpthemeMainContent" role="main">
+			<div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden">
+				<div>
+					<div class="wpthemeInner">
+
+						<!-- this layout has one main container -->
+						<div class="wptheme1Col">
+							<form id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:printForm"
+								name="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:printForm">
+								<div id="printableRctDtl">
+
+									<br> <br>
+
+									<table width="95%" align="center">
+										<tbody>
+											<tr>
+												<td width="57%" colspan="3" align="right"><img
+														src="./SearchChallan_files/layer_10.png"
+														style="text-align:center"></td>
+												<td align="right"><img src="./SearchChallan_files/genbarcode">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="95%" align="center" border="1"
+										style="background-color: #fff; border: 1px solid black; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;">
+										<tbody>
+											<tr style="border: 1px solid black; border-width: thin;">
+												<td align="center" style="font-weight: bold;" class="field">ಚಲನ್ ಚಾಲ್ತಿ
+													ಅವಧಿ <br> Challan Validity
+												</td>
+												<td align="center" style="font-weight: bold;" class="field">ಜಿಲ್ಲೆ <br>
+													District</td>
+												<td align="center" style="font-weight: bold;" class="field" colspan="2">
+													ಇಲಾಖೆ ಹೆಸರು <br>
+													Department Name</td>
+												<td align="center" style="font-weight: bold;" class="field">ಡಿಡಿಓ ಕಚೇರಿ
+													<br> DDO Office
+												</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" class="content-border">7 Days</td>
+												<td align="center" class="content-border">
+													<script>
+														document.write(x.district);
+													</script>
+												</td>
+												<td align="center" class="content-border" colspan="2">
+													DEPARTMENT OF STAMPS AND REGISTRATION
+												</td>
+												<td align="center" class="content-border">SUB REGISTRAR
+													OFFICE,
+													<script>
+														document.write(x.sro);
+													</script>
+												</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="field" height="5%">
+													ವರ್ಗ <br> Category</td>
+												<td align="center" style="font-weight: bold;" class="field">ದಿನಾಂಕ <br>
+													Date
+												</td>
+												<td align="center" style="font-weight: bold;" class="field" colspan="2">
+													ಚಲನ್ ಉಲ್ಲೇಖ ಸಂಖ್ಯೆ <br>
+													Challan Reference Number</td>
+												<td align="center" style="font-weight: bold;" class="field">ಡಿಡಿಓ ಕೊಡ್
+													<br> DDO Code
+												</td>
+											</tr>
+											<tr>
+												<td align="center" class="content-border">Government
+												</td>
+												<td align="center" class="content-border">
+
+													<script type="text/javascript">
+
+														currentDate();
+
+													</script>
+												</td>
+												<td align="center" class="content-border" colspan="2">
+													<script>
+														document.write(x.challan);
+													</script>
+												</td>
+												<td align="center" class="content-border">117010
+												</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="field" colspan="1">
+													ಸಂದಾಯದಾರನ ಹೆಸರು <br>
+													Remitter Name</td>
+												<td class="content-border" colspan="2">
+													<script>
+														document.write(x.firstname.toUpperCase());
+													</script>
+												</td>
+												<td align="center" style="font-weight: bold;" class="field" colspan="1">
+													ಮೊಬೈಲ್ ಸಂಖ್ಯೆ <br> Mobile
+													Number</td>
+												<td class="content-border" colspan="1">
+													<script>
+														document.write(x.phone);
+													</script>
+												</td>
+											</tr>
+
+
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="field">ಇ-ಮೇಲ್ ಐಡಿ
+													<br> Email Id
+												</td>
+												<td class="content-border">
+													<script>
+														document.write(x.email);
+													</script>
+												</td>
+
+												<td align="center" style="font-weight: bold;" class="field">ವಿಳಾಸ <br>
+													Address</td>
+												<td class="content-border">
+													<script>
+														document.write(x.address.toUpperCase());
+													</script>
+												</td>
+
+											</tr>
+											<tr style="border: 1px solid black;">
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="field" width="10%">
+													<span
+														id="viewns_Z7_I2K611S0OGNNC0QA0KEELJ20G3_:printForm:purpose">ಉದ್ದೇಶ
+														<br> Purpose</span>
+												</td>
+												<td align="center" style="font-weight: bold;" class="field" width="10%">
+													ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ <br> Head
+													Of Account</td>
+
+												<td align="center" style="font-weight: bold;" class="field" width="10%">
+													ಉದ್ದೇಶ ನಿರ್ದೀಷ್ಟ ಐಡಿ <br>
+													Purpose Specific Id</td>
+												<td align="center" style="font-weight: bold;" class="field" width="10%">
+													ಉಪ ಉದ್ದೇಶ ಹೆಸರು <br> Sub
+													Purpose Name
+												</td>
+
+												<td align="center" style="font-weight: bold;" class="field" width="10%">
+													ಮೊತ್ತ <br> Amount</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" class="content-border">OTHER RECEIPTS
+													- GROSS RECEIPTS</td>
+												<td align="center" class="content-border">
+													0030~03~800~0~01~000</td>
+
+												<td align="center" class="content-border">NA</td>
+												<td align="center" class="content-border">OTHER RECEIPTS
+													(EC, CA, MISC. FEES)</td>
+												<td align="right" class="content-border">
+													<script>
+														document.write(x.amount);
+													</script>
+												</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="content-border"
+													colspan="1">ಸಂದಾಯ ಮಾಡುವ
+													ಬ್ಯಾಂಕ್ <br> Remittance Bank</td>
+												<td class="content-border" colspan="1">
+													<script>
+														document.write(x.gateway);
+													</script>
+												</td>
+
+												<td align="center" style="font-weight: bold;" class="field" colspan="1">
+													ಒಟ್ಟು ಮೊತ್ತ <br> Grand
+													Total</td>
+												<td align="right" class="content-border" colspan="2">
+													<script>
+														document.write(x.amount);
+													</script>
+												</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td align="center" style="font-weight: bold;" class="field">ಪಾವತಿ ಹಂತ
+													<br> Payment Status
+												</td>
+												<td align="center" style="font-weight: bold;" class="content-border">
+													Payment received at payment
+													gateway</td>
+												<td align="center" style="font-weight: bold;" class="field">ಒಟ್ಟು ಮೊತ್ತ
+													ಅಕ್ಷರಗಳಲ್ಲಿ <br> Total
+													Amount in Words
+												</td>
+												<td align="right" class="content-border" colspan="2">
+													<script>
+														document.write(x.amount_words
+														);
+													</script>
+												</td>
+											</tr>
+											<tr align="center" style="border: 1px solid black;">
+												<td colspan="5" style="font-weight: bold;" class="field">ಪಾವತಿ ವಿವರಗಳು \
+													Payment Details</td>
+											</tr>
+											<tr style="border: 1px solid black;">
+												<td style="font-weight: bold;" class="field" colspan="3" align="center">
+													ಪಾವತಿ ವಿಧ <br> Payment Mode</td>
+												<td align="center" colspan="2" class="content-border">
+													Netbanking
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<table width="80%" align="center">
+										<tbody>
+
+											<tr>
+												<td><b>
+														<script type="text/javascript">
+															getRandomTransactionId();
+														</script>
+													</b></td>
+											</tr>
+
+											<!-- <tr>
+																<td><b>* ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್/ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಮೂಲಕ ಮಾಡಿರುವ
+																		ಎಲ್ಲಾ ಪಾವತಿಗಳ ಮೇಲೆ ಹೆಚ್ಚುವರಿ ಸೇವಾ ಶುಲ್ಕ
+																		ಅನ್ವಯವಾಗುತ್ತದೆ. ಹಾಗೂ ಬ್ಯಾಂಕ್ ಅದನ್ನು ನೇರವಾಗಿ
+																		ಖರ್ಚು ಹಾಕುತ್ತದೆ. <br> *Additional Service
+																		charges are applicable for all payments made
+																		through CC/DC and the same would be debited
+																		directly by the bank. </b></td>
+															</tr>
+															<tr>
+																<td><b>* ಯಾವುದೇ ಸಂದರ್ಭದಲ್ಲಿ ಸಂದಾಯದಾರನು ಶುಲ್ಕ
+																		ಮರುಪಾವತಿಯನ್ನು ಕೊರಬಾರದು <br> *Under no
+																		circumstances the remitter will seek a Charge
+																		Back</b></td>
+															</tr> -->
+										</tbody>
+									</table>
+
+								</div>
+								<!--  <div class="page-footer"></div> -->
+								<table style="margin-top: 10px; margin-bottom: 10px; display:flex; align-items:center;">
+									<tbody>
+										<tr>
+											<td><span><input type="submit" value="ಮುದ್ರಿಸು \ Print"
+														onclick="printChallan1()" class="searchBtn">
+
+												</span>
+											</td>
+											<td><span><a class="searchBtn" href="./SearchChallan.html"
+														target="_blank">Verify Challan</a>
+
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+
+						</div>
+
+
+					</div>
+				</div>
+
+				<!--end main content-->
+
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+
+</html>

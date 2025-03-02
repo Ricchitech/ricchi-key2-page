@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "state": "Karnataka",
+      "districts": ["BENGALURU RURAL", "BENGALURU URBAN", "CHIKKABALLAPUR"]
+    },
+    {
+      "districts1": ["BENGALURU RURAL", "BENGALURU URBAN", "CHIKKABALLAPUR"]
+    },
+
+    {
+      "Username": ["brg2289", "mongo username"]
+    },
+    {
+      "Password": ["Uzo8HlOYKCn08pCE"]
+    },
+    {
+      "connection string": "mongodb+srv://brg2289:Uzo8HlOYKCn08pCE@k2challan.z3nvw.mongodb.net/",
+      "appllicationcode": "mongodb+srv://brg2289:Uzo8HlOYKCn08pCE@k2challan.z3nvw.mongodb.net/?retryWrites=true&w=majority&appName=k2challan"
+    }
+  ]
+}
